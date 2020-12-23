@@ -85,10 +85,7 @@ body, h1, h2, h3, h4, p, a {
   background-color: #2f80ed;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
+
 
 .two-columns{
   display: flex;
