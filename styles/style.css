@@ -55,7 +55,6 @@
   z-index: 1;
   bottom: 30px;
   margin-left: 64px;
-  z-index: 2;
 }
 
 .header__subtitle_h2{
@@ -148,7 +147,6 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  position: relative;
   text-align: center;
 }
 
