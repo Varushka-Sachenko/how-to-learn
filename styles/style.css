@@ -1,10 +1,10 @@
-body, h1, h2, h3, h4, p, a {
+/* body, h1, h2, h3, h4, p, a {
   margin: 0;
   padding: 0;
 }
 * {
   box-sizing: border-box;
-}
+}*/
 
 .page {
   min-width: 1100px;
@@ -26,7 +26,7 @@ body, h1, h2, h3, h4, p, a {
   background-color: #f2f2f2;
 }
 
-.logo_place_header{
+.header__logo_place_header{
   position: relative;
   z-index: 1;
   left: 64px;
@@ -35,30 +35,27 @@ body, h1, h2, h3, h4, p, a {
   height: 32px;
 }
 
-.div-header{
-  display: flex;
-}
 .header__title{
   width: 730px;
-  margin: auto;
-  top: 50%;
-  left: 64px;
-  position: absolute;
-
-}
-
-.header__title_h1{
+  display: flex;
+  margin-left: 64px;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  z-index: 2;
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
 
 }
+
 .header__subtitle{
   width: 388px;
   position: absolute;
   z-index: 1;
   bottom: 30px;
   margin-left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle_h2{
@@ -67,6 +64,10 @@ body, h1, h2, h3, h4, p, a {
   font-weight:normal;
 }
 
+.header__link{
+  color: #2f80ed;
+  text-decoration: inherit;
+}
 .header__main-illustration{
   width: 765px;
   height: 608px;
@@ -86,6 +87,12 @@ body, h1, h2, h3, h4, p, a {
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 
+.description{
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+}
 
 .two-columns{
   display: flex;
@@ -100,16 +107,12 @@ body, h1, h2, h3, h4, p, a {
 }
 
 .two-columns__brief{
-
   width: 175px;
-
-}
-
-.two-columns__h2{
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+
 }
 
 .two-columns__main-text{
@@ -121,8 +124,8 @@ body, h1, h2, h3, h4, p, a {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  width: 80%;
   min-width: 784px;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent{
@@ -135,16 +138,13 @@ body, h1, h2, h3, h4, p, a {
   background-color: #f2f2f2;
   position: relative;
   padding-top: 100px;
-  height: 790px;
+  min-height: 790px;
 }
 
-.feynman_title{
+.feynman__title{
   width: 648px;
   margin: auto;
   position: relative;
-}
-
-.feynman_title_h2{
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -152,12 +152,9 @@ body, h1, h2, h3, h4, p, a {
   text-align: center;
 }
 
-.feynman_subtitle{
+.feynman__subtitle{
   margin-top: 70px;
   position: relative;
-}
-
-.feynman_subtitle_h3{
   line-height: 51px;
   font-size: 36px;
   font-weight:normal;
@@ -165,13 +162,11 @@ body, h1, h2, h3, h4, p, a {
   text-align: center;
 }
 
-.feynman_link{
+
+.feynman__link{
   position: absolute;
   top: 50%;
   right: 48px;
-}
-
-.feynman_link_a{
   color: #2f80ed;
   text-decoration: inherit;
   line-height: 51px;
@@ -179,7 +174,7 @@ body, h1, h2, h3, h4, p, a {
   font-weight:normal;
 }
 
-.feynman_image{
+.feynman__image{
   width: 867px;
   height: 637px;
   position: absolute;
@@ -189,7 +184,6 @@ body, h1, h2, h3, h4, p, a {
 
 .digits{
   margin-bottom: 100px;
-  margin-top: 100px;
 }
 .section-title{
   width: 60%;
@@ -197,14 +191,11 @@ body, h1, h2, h3, h4, p, a {
   align-content: center;
   display: flex;
   justify-content: center;
-
-}
-
-.section-title__h2{
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   margin-top: 100px;
+
 }
 
 .section-subtitle{
@@ -213,15 +204,13 @@ body, h1, h2, h3, h4, p, a {
   align-content: center;
   display: flex;
   justify-content: center;
-
-}
-
-.section-subtitle__h3{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin-top: 20px;
+
 }
+
 
 .table{
   width: 1100px;
@@ -231,17 +220,16 @@ body, h1, h2, h3, h4, p, a {
   justify-content: space-evenly;
   flex-direction: row;
   border-collapse: collapse;
+  position: relative;
 }
 
-.table__tr{
-  border-top: 80px solid transparent;
-}
 
 .table__cell{
   width: 250px;
   margin-top: 60px;
   margin-bottom: 60px;
   vertical-align: top;
+  padding-top: 60px;
 
 }
 
@@ -273,40 +261,35 @@ body, h1, h2, h3, h4, p, a {
   width: 200px;
   color: white;
   margin-right: 0;
-
-  border-right: 10px solid transparent;
+  padding-top: 60px;
 }
-.section-title_theme_dark{
+.kaufman__section-title_theme_dark{
   width: 60%;
   margin-top: 90px;
   align-content: center;
   display: flex;
   justify-content: center;
   margin: auto;
-}
-
-.section-title_theme_dark_h2{
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   color: white;
 }
 
-.section-subtitle_theme_dark{
+.kaufman__section-subtitle_theme_dark{
   width: 60%;
   margin-top: 20px;
   align-content: center;
   display: flex;
   justify-content: center;
   margin:auto;
-}
-
-.section-subtitle_theme_dark_h3{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   color: white;
 }
+
+
 .table_theme_dark{
   margin-left: auto;
   margin-right: auto;
@@ -318,7 +301,6 @@ body, h1, h2, h3, h4, p, a {
 }
 
 .kaufman__table_tr_dark{
-  border-top: 80px solid transparent;
   vertical-align: top;
 }
 
@@ -347,41 +329,54 @@ body, h1, h2, h3, h4, p, a {
   bottom: -300px;
   height: 877px;
   width: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
 
 }
 
-.div__table{
-  position: relative;
-}
 .footer{
   background-color: #1f1f1f;
-  max-height: 350px;
-  flex-basis: 711px;
-  padding-top: 100px;
+
+  padding-top: 60px;
   padding-bottom: 40px;
+  min-height: 350px;
+  justify-content: center;
+  display: flex;
 
 }
 
-.columns{
+.footer__columns{
   width: 90%;
-   border-collapse: collapse;
+  display: flex;
+  border-collapse: collapse;
 }
 
-.columns_content_copyright{
+.footer__columns_left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-basis: 711px;
+}
+
+.footer__columns_right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.footer__columns_content_copyright{
   position: relative;
 }
 
-.logo_place_footer{
+.footer__logo_place_footer{
   width: 183px;
   height: 35px;
   top: 0;
   left: 0;
-  position: absolute;
 }
 
 .footer__author{
   margin-top: 18px;
   margin-bottom: 18px;
+  padding-top: 100px;
   left: 0;
   color: white;
 }
@@ -399,15 +394,16 @@ body, h1, h2, h3, h4, p, a {
   line-height: 30px;
   font-size: 18px;
   text-decoration: inherit;
+  list-style-type:none;
 }
-.columns_content_info{
+.footer__columns_content_info{
   border-bottom: 16px solid transparent;
   color: white;
   display: flex;
   flex-direction: column;
 }
 
-.columns_content_social{
+.footer__columns_content_social{
   border-bottom: 16px solid transparent;
   color: white;
   flex-direction: column;
