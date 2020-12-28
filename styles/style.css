@@ -46,11 +46,11 @@
 
 .header__title{
   width: 730px;
+  margin: 0;
   display: flex;
   margin-left: 64px;
   justify-content: center;
   align-items: center;
-  height: 50vh;
   z-index: 2;
   font-size: 102px;
   font-weight: bold;
@@ -61,7 +61,7 @@
 .header__subtitle{
   width: 388px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   bottom: 30px;
   margin-left: 64px;
   line-height: 25px;
@@ -99,6 +99,7 @@
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .two-columns{
@@ -269,6 +270,7 @@
 
 .table__cell_theme_dark {
   width: 200px;
+  padding-top: 80px;
 }
 
 .section-title_theme_dark{
@@ -373,7 +375,7 @@
   font-size: 18px;
   text-decoration: inherit;
   list-style-type:none;
-
+  margin-bottom: 16px;
 }
 
 .footer__column-link{
