@@ -6,3 +6,8 @@
     text-decoration: inherit;
     position: absolute;
   }
+
+  .buy-link:hover {
+    opacity: 0.6;
+    transition: opasity 4s ease-in;
+  }

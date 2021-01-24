@@ -1,4 +1,9 @@
 .header__link{
-    color: #2f80ed;
-    text-decoration: inherit;
-  }
+  color: #2f80ed;
+  text-decoration: inherit;
+}
+
+.header__link:hover {
+  opacity: 0.6;
+  transition: opasity 4s ease-in;
+}
